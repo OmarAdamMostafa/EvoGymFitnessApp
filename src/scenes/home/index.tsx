@@ -8,6 +8,7 @@ import SponsorForbes from "@/assets/SponsorForbes.png";
 import SponsorFortune from "@/assets/SponsorFortune.png";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { motion } from "framer-motion";
+import React from "react";
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
@@ -15,7 +16,7 @@ type Props = {
 
 const Home = ({ setSelectedPage }: Props) => {
     const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
-    const sponsors = [
+    const sponsors: Array<{id:React.Key, name:string, value:string}> = [
         {id:1,name:'RedBullLogo',value:SponsorRedBull},
         {id:2,name:'ForbesLogo',value:SponsorForbes},
         {id:3,name:'FortuneLogo',value:SponsorFortune}
@@ -96,7 +97,7 @@ const Home = ({ setSelectedPage }: Props) => {
                 <div className="flex items-center justify-center gap-48">
                     {
                         sponsors.map((sponsor)=>(
-                            <img key={sponsor.id} alt={sponsor.name}src={sponsor.value} />
+                            <img key={sponsor.id} alt={sponsor.name} src={sponsor.value} />
                         ))
                     }
                 </div>
