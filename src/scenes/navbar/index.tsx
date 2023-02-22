@@ -5,6 +5,7 @@ import Link from "./Link"
 import { SelectedPage } from "@/shared/types"
 import useMediaQuery from "@/hooks/useMediaQuery"
 import ActionButton from "@/shared/ActionButton"
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 type Props = {
     isTopOfPage: boolean
@@ -24,21 +25,25 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
                 <div className={`${flexBetween} mx-auto w-5/6`}>
                     <div className={`${flexBetween} w-full gap-16`}>
                         {/* Left Side */}
-                        <img alt="Logo" src={Logo}/>
+                        <AnchorLink 
+                            href={`#${SelectedPage.Home}`} 
+                            onClick={()=>setSelectedPage(SelectedPage.Home)}
+                        >
+                            <img alt="logo" src={Logo}/>
+                        </AnchorLink>
 
                         {/* Right Side */}
                         {
                             isAboveMediumScreens ? (
                                 // Desktop Side
                                 <div className={`${flexBetween} w-full`}>
-                                    <div className={`${flexBetween} gap-8 text-sm`}>
+                                    <div className={`${flexBetween} gap-8 `}>
                                         <Link page="Home" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
                                         <Link page="Benefits" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
                                         <Link page="Our Classes" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
                                         <Link page="Contact Us" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
                                     </div>
                                     <div className={`${flexBetween} gap-8`}>
-                                        <p>Sign In</p>
                                         <ActionButton setSelectedPage={setSelectedPage}>
                                             Become a member
                                         </ActionButton>
