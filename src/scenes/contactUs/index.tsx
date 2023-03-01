@@ -43,10 +43,10 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                         <span className="text-primary-500">JOIN NOW</span> TO GET IN SHAPE
                     </HText>
                     <p className="my-5">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Aliquam qui in excepturi labore totam tenetur vero perferendis error, 
-                        reprehenderit fuga reiciendis eius iusto obcaecati beatae ratione mollitia. 
-                        Numquam, aliquid eius.
+                        We're always here to help! If you have any questions, comments, or 
+                        concerns, please don't hesitate to contact us. Our friendly staff 
+                        is available to assist you with anything you need, from membership 
+                        inquiries to class schedules and more.
                     </p>
                 </motion.div>
 

@@ -15,19 +15,19 @@ const benefits: Array<BenefitType> = [
     icon: <HomeModernIcon className="h-6 w-6" />,
     title: "State of the Art Facilities",
     description:
-      "Neque adipiscing amet amet enim. Feugiat dolor enim fermentum in a in lectus pellentesque. Ullamcorper et. ",
+      "Our gyms feature top-of-the-line equipment, including weight machines, free weights, and cardio machines. Our facilities also include locker rooms, showers, and sauna and steam rooms for members to relax and rejuvenate after their workouts.",
   },
   {
     icon: <UserGroupIcon className="h-6 w-6" />,
     title: "100's of Diverse Classes",
     description:
-      "Eu ipsum id egestas risus tempus enim semper felis quis. Nec consectetur ac venenatis facilisi est. Eget ac turpis id.",
+      "Our gyms offers a variety of group fitness classes, including yoga, Pilates, cycling, and more.",
   },
   {
     icon: <AcademicCapIcon className="h-6 w-6" />,
     title: "Expert and Pro Trainers",
     description:
-      "Fusce vestibulum aliquam ut cras. Nisl lectus egestas sapien nisl. Lacus at mi sit pellentesque. Congue parturient.",
+      "Our gym is proud to employ a team of highly trained, certified and knowledgeable experts and trainers. They are passionate about helping members achieve their fitness goals and provide personalized attention to each individual.",
   },
 ];
 
@@ -131,18 +131,21 @@ const Benefits = ({ setSelectedPage }: Props) => {
               }}
             >
               <p className="my-5">
-                Nascetur aenean massa auctor tincidunt. Iaculis potenti amet
-                egestas ultrices consectetur adipiscing ultricies enim. Pulvinar
-                fames vitae vitae quis. Quis amet vulputate tincidunt at in
-                nulla nec. Consequat sed facilisis dui sit egestas ultrices
-                tellus. Ullamcorper arcu id pretium sapien proin integer nisl.
-                Felis orci diam odio.
+                If you're looking for a gym that will help you achieve your fitness goals, 
+                look no further than our gym. Our state-of-the-art facilities are equipped 
+                with the latest and greatest equipment, ensuring that you have everything 
+                you need to get in the best shape of your life. Our expert trainers are 
+                certified and experienced, and they are passionate about helping you succeed. 
+                They will work with you to create a customized workout plan that is tailored 
+                to your specific needs and goals, and they will be there to support you every 
+                step of the way.
               </p>
               <p className="mb-5">
-                Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
-                tellus quam porttitor. Mauris velit euismod elementum arcu neque
-                facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit
-                enim mattis odio in risus nunc.
+                In addition, we offer a variety of group fitness classes, including yoga, 
+                Pilates, cycling, and more, so you can stay motivated and engaged. 
+                And with our affordable membership options, you can get all of these benefits 
+                without breaking the bank. So why wait? Join our gym today and start achieving 
+                your fitness goals!
               </p>
             </motion.div>
 
